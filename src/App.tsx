@@ -1,45 +1,20 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import "./styles/theme.css";
+import "./styles/global.css";
+import { Route, Routes } from "react-router-dom";
+import { Logo } from "./components/Logo/Logo";
+import { Home } from "./pages/Home/Home";
+import { Menu } from "./components/Menu/Menu";
+import { Pomodoro } from "./pages/Pomodoro/Pomodoro";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export function App() {
   return (
-    <>
-      <div>
-        <a
-          href="https://vite.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Vite website"
-        >
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a
-          href="https://react.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="React website"
-        >
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main>
+      <Logo />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Pomodoro" element={<Pomodoro />} />
+      </Routes>
+      <Menu />
+    </main>
   );
 }
-
-export default App;
