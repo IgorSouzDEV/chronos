@@ -1,0 +1,28 @@
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.3rem solid var(--link-color);
+  border-radius: 0.8rem;
+  text-align: center;
+  color: var(--text-default);
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  box-shadow: 0 0 0.5rem rgba(13, 161, 112, 0.6);
+  transition: all 0.5s ease-in-out;
+}
+
+.input::placeholder {
+  color: var(--text-default);
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 1rem rgba(13, 161, 112, 10);
+}
+
+.input:disabled {
+  border-bottom: 0.3rem solid var(--disabled);
+  color: var(--text-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
+}
