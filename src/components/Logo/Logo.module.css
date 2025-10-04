@@ -3,14 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 .logo h1 {
   font-size: 4.5rem;
-  text-shadow: 10px 10px 20px rgba(178, 88, 4, 0.941);
+  text-shadow: 10px 10px 20px var(--text-shadow);
   color: var(--text-primary); /* Dourado para "Chronos" */
   font-style: italic;
   font-weight: 600;
@@ -26,9 +24,9 @@
 
 .logo svg:hover {
   transform: rotate(180deg);
-  color: #ffa500; /* Laranja ao passar o mouse */
+  color: var(--svg-hover); /* Laranja ao passar o mouse */
 }
 
 .logo h1:hover {
-  text-shadow: 30px 2px 30px rgba(178, 88, 4, 1);
+  text-shadow: 30px 2px 30px var(--text-shadow); /* Sombra mais intensa ao passar o mouse */
 }

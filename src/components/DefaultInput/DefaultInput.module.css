@@ -7,7 +7,7 @@
   color: var(--text-default);
   font-size: 1.6rem;
   padding: 0.8rem;
-  box-shadow: 0 0 0.5rem rgba(13, 161, 112, 0.6);
+  box-shadow: 0 0 0.5rem var(--box-shadow-6);
   transition: all 0.5s ease-in-out;
 }
 
@@ -17,7 +17,7 @@
 
 .input:focus {
   outline: none;
-  box-shadow: 0 0 1rem rgba(13, 161, 112, 10);
+  box-shadow: 0 0 1rem var(--box-shadow-10);
 }
 
 .input:disabled {

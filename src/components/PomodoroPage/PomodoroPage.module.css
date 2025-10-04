@@ -1,0 +1,27 @@
+.pomodoroPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pomodoroPage p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.pomodoroPage a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-primary);
+  transition: all 0.6s ease-in-out;
+}
+
+.pomodoroPage a:hover {
+  color: var(--text-primary);
+}
+
+.pomodoroPage svg {
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}

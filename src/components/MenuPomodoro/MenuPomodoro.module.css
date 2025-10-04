@@ -10,7 +10,7 @@
   justify-content: center;
   gap: 0.8rem;
   background-color: var(--primary);
-  color: var(--text-over-primary);
+  color: var(--text-default);
   padding: 1rem;
   border-radius: 0.8rem;
 }

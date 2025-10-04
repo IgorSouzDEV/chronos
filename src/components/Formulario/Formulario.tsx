@@ -1,4 +1,6 @@
+import { PlayCircleIcon } from "lucide-react";
 import { Cycles } from "../Cycles/Cycles";
+import { DefaultButton } from "../DefaultButton/DefaultButton";
 import { DefaultInput } from "../DefaultInput/DefaultInput";
 import styles from "./Formulario.module.css";
 
@@ -12,7 +14,7 @@ export function Formulario() {
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <Cycles />
-      <button type="submit">Cadastrar</button>
+      <DefaultButton icon={<PlayCircleIcon size={34} />} />
     </form>
   );
 }

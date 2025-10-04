@@ -1,0 +1,36 @@
+/* src/components/BotaoTema/BotaoTema.module.css */
+
+.botaoTema {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.botaoTema:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icone {
+  color: var(--text-primary);
+  transition: transform 0.3s ease;
+}
+
+/* Animação sutil no ícone */
+.botaoTema:hover .icone {
+  transform: rotate(15deg);
+}
