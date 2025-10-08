@@ -65,3 +65,14 @@
   color: var(--text-default);
   box-shadow: 0 0 0.8rem rgba(13, 161, 112, 0.8);
 }
+
+.yellow {
+  background-color: var(--warning);
+  color: var(--text-default);
+}
+
+.yellow:hover {
+  background-color: var(--warning);
+  color: var(--text-default);
+  box-shadow: 0 0 0.8rem rgba(13, 161, 112, 0.8);
+}

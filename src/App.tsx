@@ -3,7 +3,6 @@ import "./styles/global.css";
 import { Route, Routes } from "react-router-dom";
 import { Logo } from "./components/Logo/Logo";
 import { Home } from "./pages/Home/Home";
-import { Menu } from "./components/Menu/Menu";
 import { Pomodoro } from "./pages/Pomodoro/Pomodoro";
 import { PomodoroInfo } from "./pages/PomodoroInfo/PomodoroInfo";
 import { BotaoTema } from "./components/BotaoTema/BotaoTema";
@@ -20,7 +19,6 @@ export function App() {
         <Route path="/PomodoroInfo" element={<PomodoroInfo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Menu />
     </main>
   );
 }

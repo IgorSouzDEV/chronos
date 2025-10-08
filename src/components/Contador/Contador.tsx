@@ -1,5 +1,9 @@
 import styles from "./Contador.module.css";
 
-export function Contador() {
-  return <div className={styles.contador}>00:00</div>;
+type ContadorProps = {
+  tempoFormatado: string;
+};
+
+export function Contador({ tempoFormatado }: ContadorProps) {
+  return <div className={styles.contador}>{tempoFormatado}</div>;
 }

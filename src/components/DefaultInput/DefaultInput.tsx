@@ -5,23 +5,15 @@ type DefaultInputProps = {
   labelText?: string;
 } & React.ComponentProps<"input">;
 
-export function DefaultInput({
-  id,
-  type,
-  labelText,
-  ...test
-}: DefaultInputProps) {
+export function DefaultInput({ id, labelText, ...props }: DefaultInputProps) {
   return (
-    <>
-      {labelText && <label htmlFor={id}>{labelText}</label>}
-      {/* condicional if para renderizar o label apenas se o labelText for fornecido */}
-      <input
-        type={type}
-        id={id}
-        {...test}
-        className={styles.input}
-        placeholder="Digite algo"
-      />
-    </>
+    <div className={styles.inputWrapper}>
+      {labelText && (
+        <label htmlFor={id} className={styles.inputLabel}>
+          {labelText}
+        </label>
+      )}
+      <input id={id} {...props} className={styles.inputField} />
+    </div>
   );
 }

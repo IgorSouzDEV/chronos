@@ -2,7 +2,7 @@ import styles from "./DefaultButton.module.css";
 
 type DefaultButtonProps = {
   icon: React.ReactNode;
-  color?: "green" | "red";
+  color?: "green" | "red" | "yellow";
 } & React.ComponentProps<"button">;
 
 export function DefaultButton({
